@@ -9,34 +9,11 @@ Author: Lyna ([@lynagd](https://github.com/lynagd))
 
 | Folder | Chart(s) | Data |
 |---|---|---|
-| [`dotplot-barchart`](./dotplot-barchart) | Bar chart (`barchart.js`) and dot plot (`dotplot.js`) | `named_colors_css.csv`, `us-cities.csv` |
+| [`TP1`](./TP1) | 1st example | `named_colors_css.csv` |
+| [`dotplot-barchart`](./dotplot-barchart) | Bar chart (`barchart.js`) and dot plot (`dotplot.js`) |  `us-cities.csv` |
 | [`stacked barchart-densityplot`](./stacked%20barchart-densityplot) | Stacked bar chart (`index.js`) and overlapping density plot (`density.js`) | `titanic-data.csv` |
 | [`boxplot`](./boxplot) | Boxplots of all numeric attributes, standardized | `abalone.csv` |
 
-## Details
-
-### Dot plot and bar chart (`dotplot-barchart`)
-- `barchart.js` draws a bar chart, `dotplot.js` draws a dot plot.
-- Both are loaded through the `index.html` of the folder.
-
-### Stacked bar chart and density plot (`stacked barchart-densityplot`)
-- **Stacked bar chart** (`index.html` + `index.js`): Titanic passengers, stacked by gender.
-- **Density plot** (`density.html` + `density.js`): overlapping density curves of the age of
-  male and female passengers.
-  - Kernel density estimation written by hand: Gaussian kernel, bandwidth = 3,
-    evaluated every 0.5 year from 0 to 80.
-  - The two curves are semi-transparent so both stay visible.
-
-### Boxplot (`boxplot`)
-- One boxplot per numeric column of the abalone dataset, side by side.
-- The numeric columns are detected from the data (`data.columns`), nothing is hard-coded.
-- The data is used exactly as it is in the CSV (no filtering).
-- Every column is **standardized** (z-score) so that attributes with very different scales
-  (Height ~0.1, Rings ~10) can share one axis.
-- Box = interquartile range (Q1 to Q3), solid line = median, dashed line = mean.
-- Whiskers stop at the last point within 1.5 x IQR; points beyond are drawn as outliers.
-- The y-axis is fixed to [-5, 7]. Height has two extreme outliers (z of about 9 and 24) that would
-  flatten all the other boxes, so outliers outside this range are not drawn.
 
 ## How to run
 
