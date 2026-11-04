@@ -1,6 +1,6 @@
 # d3visuals
 
-Practical work (TP) for the **Data Visualization (VD)** module. Each exercise is a small
+Practical work for the **Data Visualization (VD)** module. Each exercise is a small
 [D3.js](https://d3js.org/) (v7) project that loads a CSV file and draws a chart in SVG.
 
 Author: Lyna ([@lynagd](https://github.com/lynagd))
